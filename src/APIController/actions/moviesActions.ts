@@ -1,9 +1,13 @@
 import { MoviesTypes } from '../action-types'
-import { Movies } from '../interfaces'  
+
+interface AutoComplete{
+    type:MoviesTypes.AutoComplete,
+    autocomplete:any[]
+}
 
 interface FindByTitle{
     type:MoviesTypes.FindByTitle,
-    payload:Movies[]
+    payload:any[]
 }
 
-export type Action = FindByTitle
+export type Action = any; 

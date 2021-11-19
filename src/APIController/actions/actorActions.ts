@@ -1,9 +1,8 @@
 import { ActorsTypes } from '../action-types'
-import { Actors } from '../interfaces'
 
 interface ListBornToday{
     type:ActorsTypes.ListBornToday
-    payload:Actors[]
+    payload:any[]
 }
 
-export type Action = ListBornToday
+export type Action = any

@@ -1,4 +1,5 @@
 export enum MoviesTypes {
+    AutoComplete = 'AutoComplete',
     FindByTitle = 'FindByTitle',
     GetVideos = 'GetVideos',
     GetDetails = 'GetDetails',
@@ -48,8 +49,7 @@ export enum MoviesTypes {
     GetQuotes = 'GetQuotes',
     GetGoofs = 'GetGoofs',
     GetCrazyCredits = 'GetCrazyCredits',
-    GetSoundTracks = 'GetSoundTracks',
-    AutoComplete = 'AutoComplete'
+    GetSoundTracks = 'GetSoundTracks'
 }
 export enum ActorsTypes{
     ListBornToday = 'ListBornToday',
