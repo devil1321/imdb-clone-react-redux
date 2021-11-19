@@ -3,6 +3,8 @@ import { MoviesState } from '../interfaces'
 import { Action } from '../actions/moviesActions'
 
 const initData:MoviesState = {
+    currentCountry:'',
+    currentTitleId: '',
     autocomplete:[],
     find:[],
     getVideos:[],
@@ -65,59 +67,73 @@ export default (state = initData,action:Action) =>{
             }
         case MoviesTypes.FindByTitle:
             return{
-                ...state
+                ...state,
+                findByTitle:action.findByTitle
             }
         case MoviesTypes.GetVideos:
             return{
-                ...state
+                ...state,
+                getVideos:action.getVideos
             }
         case MoviesTypes.GetDetails:
             return{
-                ...state
+                ...state,
+                getDetails:action.getDetails
             }
         case MoviesTypes.GetTopStripe:
             return{
-                ...state
+                ...state,
+                getTopStripe:action.getTopStripe
             }
         case MoviesTypes.GetPopularMoviesByGenre:
             return{
-                ...state
+                ...state,
+                getPopularMoviesByGenre:action.getPopularMoviesByGenre
             }
         case MoviesTypes.GetTopCast:
             return{
-                ...state
+                ...state,
+                getTopCast:action.getTopCast
             }
         case MoviesTypes.GetFullCredits:
             return{
-                ...state
+                ...state,
+                getFullCredits:action.getFullCredits
             }
         case MoviesTypes.GetVersions:
             return{
-                ...state
+                ...state,
+               getVersions:action.getVersions
             }
-        case MoviesTypes.GetMostPopulatMovies:
+        case MoviesTypes.GetMostPopularMovies:
             return{
-                ...state
+                ...state,
+                getMostPopularMovies:action.getMostPopularMovies
             }
         case MoviesTypes.GetOverviewDetails:
             return{
-                ...state
+                ...state,
+                getOverviewDetails:action.getOverviewDetails
             }
         case MoviesTypes.GetTagLines:
             return{
-                ...state
+                ...state,
+                getTagLines:action.getTagLines
             }
         case MoviesTypes.GetPlots:
             return{
-                ...state
+                ...state,
+                getPlots:action.getPlots
             }
         case MoviesTypes.GetParentalGuide:
             return{
-                ...state
+                ...state,
+                getParentalGuide:action.getParentalGuide
             }
         case MoviesTypes.GetComingSoonMovies:
             return{
-                ...state
+                ...state,
+                getComingSoonTvShows:action.getComingSoonTvShows
             }
         case MoviesTypes.GetTechnical:
             return{
