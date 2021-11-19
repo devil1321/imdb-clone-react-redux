@@ -1,4 +1,6 @@
 export interface MoviesState {
+    currentCountry:string;
+    currentTitleId:string;
     autocomplete:any[];
     find:any[];
     getVideos:any[];

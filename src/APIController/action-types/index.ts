@@ -8,7 +8,7 @@ export enum MoviesTypes {
     GetTopCast = 'GetTopCast',
     GetFullCredits = 'GetFullCredits',
     GetVersions = 'GetVersions',
-    GetMostPopulatMovies = 'GetMostPopulatMovies',
+    GetMostPopularMovies = 'GetMostPopularMovies',
     GetOverviewDetails = 'GetOverviewDetails',
     GetTagLines = 'GetTagLines',
     GetPlots = 'GetPlots',
