@@ -53,6 +53,7 @@ export enum MoviesTypes {
     GetSoundTracks = 'GetSoundTracks'
 }
 export enum ActorsTypes{
+    SetActorId = 'SetActorId',
     ListBornToday = 'ListBornToday',
     ListMostPopularCelebs = 'ListMostPopularCelebs',
     GetBio = 'GetBio',
