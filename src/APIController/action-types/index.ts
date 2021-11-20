@@ -1,4 +1,5 @@
 export enum MoviesTypes {
+    SetCurrentTitleId = 'SetCurrentTitleId',
     AutoComplete = 'AutoComplete',
     FindByTitle = 'FindByTitle',
     GetVideos = 'GetVideos',
