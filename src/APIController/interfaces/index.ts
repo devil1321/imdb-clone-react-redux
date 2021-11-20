@@ -1,0 +1,112 @@
+export interface MoviesState {
+    currentCountry:string;
+    currentTitleId:string;
+    autocomplete:any[];
+    find:any[];
+    getVideos:any[];
+    getDetails:any[];
+    getTopStripe:any[];
+    getPopularMoviesByGenre:any[];
+    getTopCast:any[];
+    getFullCredits:any[];
+    getVersions:any[];
+    getMostPopulatMovies:any[];
+    getOverviewDetails:any[];
+    getTagLines:any[];
+    getPlots:any[];
+    getParentalGuide:any[];
+    getComingSoonTvShows:any[];
+    getTechnical:any[];
+    getTopCrew:any[];
+    getRatings:any[];
+    getAwards:any[];
+    GetMetaCritic:any[];
+    getUserReviews:any[];
+    getAwardsSummary:any[];
+    getHeroWithPromotedVideo:any[];
+    getComingSoonMovies:any[];
+    getBase:any[];
+    getSeasons:any[];
+    getVideoPlayback:any[];
+    getTopRatedMovies:any[];
+    getProductionStatus:any[];
+    getBusiness:any[];
+    GetReleaseExpectationBudle:any[];
+    getNews:any[];
+    listPopularGenres:any[];
+    getReviews:any[];
+    getMostPopularTvShows:any[];
+    getSynopses:any[];
+    getGenres:any[];
+    getCharNameList:any[];
+    getMoreLikeThis:any[];
+    getBestPictureWinners:any[];
+    getTopRatedTvShows:any[];
+    getImages:any[];
+    getAllImages:any[];
+    getFilmingLocations:any[];
+    getMetaData:any[];
+    getReleases:any[];
+    getTrivia:any[];
+    getQuotes:any[];
+    getGoofs:any[];
+    getCrazyCredits:any[];
+    getSoundTracks:any[];
+}
+export interface ActorsState {
+    actorId:string;
+    listBornToday:any[];
+    listMostPopularCelebs:any[];
+    getBio:any[];
+    getAllFilmography:any[];
+    GetFilmographyApperances:any[];
+    getAllImages:any[];
+    getAllNews:any[];
+    GetAllVideos:any[];
+    getAwards:any[];
+    getAwardsSummary:any[];
+    getIntrestingJobs:any[];
+    getKnowFor:any[]
+}
+
+export interface AxiosMoviesOptions {
+    method:any;
+    url:string;
+    params?:{
+        q?:string;
+        tconst?:string;
+        viconst?:string;
+        currentCountry?:string;
+        today?:string;
+        homeCountry?:string;
+        purchaseCountry?:string;
+        genre?:string;
+        country?:string;
+        limit?:string;
+        region?:string;
+    }
+    headers:{
+        'x-rapidapi-host':string;
+        'x-rapidapi-key':string;
+    }
+}
+
+export interface AxiosActorOptions {
+    method:any;
+    url:string;
+    params?:{
+       nconst?:string;
+       tconst?:string;
+       month?:string;
+       day?:string;
+       homeCountry?:string;
+       currentCountry?:string;
+       purchaseCountry?:string;
+       category?:string;
+       region?:string;
+    }
+    headers:{
+        'x-rapidapi-host':string;
+        'x-rapidapi-key':string;
+    }
+}
