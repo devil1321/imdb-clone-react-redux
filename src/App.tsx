@@ -1,8 +1,20 @@
-import React from 'react';
+import React,{useState,useEffect} from 'react';
 import logo from './logo.svg';
 import './App.css';
+import {useSelector,useDispatch} from 'react-redux'
+import { bindActionCreators } from 'redux';
+import { State } from './APIController/reducers'
+import * as MoviesActions from './APIController/action-creators/moviesActions'
 
-function App() {
+const App = () => {
+
+  const { actors, movies } = useSelector((state:State) => state)
+  const dispatch = useDispatch()
+  const MoviesAPI = bindActionCreators(MoviesActions,dispatch)
+
+  useEffect(()=>{
+
+  },[])
   return (
     <div className="App">
       <header className="App-header">
