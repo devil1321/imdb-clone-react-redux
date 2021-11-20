@@ -1,6 +1,9 @@
 import { ActorsTypes } from '../action-types'
 import { ActorsState } from '../interfaces'
 import { Action } from '../actions/actorActions'
+import { getBio, setActorId } from '../action-creators/actorsActions'
+import { listMostPopularCelebs, getAllFilmography, getAllVideos } from './../action-creators/actorsActions';
+import { getAwardsSummary } from './../action-creators/moviesActions';
 
 const initData:ActorsState = {
     actorId:'',
@@ -20,53 +23,70 @@ const initData:ActorsState = {
 
 export default (state = initData , action:Action) =>{
     switch(action.type){
+        case ActorsTypes.SetActorId:
+            return{
+                ...state,
+                actorId:action.actorId
+            }
         case ActorsTypes.ListBornToday:
             return {
-                ...state
+                ...state,
+                listBornToday:action.listBornToday
             }
         case ActorsTypes.ListMostPopularCelebs:
             return {
-                ...state
+                ...state,
+                listMostPopularCelebs:action.listMostPopularCelebs
             }
         case ActorsTypes.GetBio:
             return {
-                ...state
+                ...state,
+                getBio:action.getBio
             }
         case ActorsTypes.GetAllFilmography:
             return {
-                ...state
+                ...state,
+                getAllFilmography:action.getAllFilmography
             }
         case ActorsTypes.GetFilmographyApperances:
             return {
-                ...state
+                ...state,
+                getFilmographyApperances:action.getFilmographyApperances
             }
         case ActorsTypes.GetAllImages:
             return {
-                ...state
+                ...state,
+                getAllImages:action.getAllImages
             }
         case ActorsTypes.GetAllNews:
             return {
-                ...state
+                ...state,
+                getAllNews:action.getAllNews
             }
         case ActorsTypes.GetAllVideos:
             return {
-                ...state
+                ...state,
+                getAllVideos:action.getAllVideos
             }
         case ActorsTypes.GetAwards:
             return {
-                ...state
+                ...state,
+                getAwards:action.getAwards
             }
         case ActorsTypes.GetAwardsSummary:
             return {
-                ...state
+                ...state,
+                getAwardsSummary:action.getAwardsSummary
             }
         case ActorsTypes.GetIntrestingJobs:
             return {
-                ...state
+                ...state,
+                getIntrestingJobs:action.getIntrestingJobs
             }
         case ActorsTypes.GetKnowFor:
             return {
-                ...state
+                ...state,
+                getKnowFor:action.getKnowFor
             }
         default:
            return {

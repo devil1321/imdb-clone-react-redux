@@ -1,6 +1,9 @@
 import { MoviesTypes }  from '../action-types'
 import { MoviesState } from '../interfaces'
 import { Action } from '../actions/moviesActions'
+import { getComingSoonMovies, getMostPopularTvShows, getQuotes, getRatings, getSoundTracks, getTechnical, getTopRatedTvShows } from '../action-creators/moviesActions'
+import { getTopCrew, getVideoPlayback, getTopRatedMovies, getCharNameList, getMoreLikeThis, getReleases, getGoofs } from './../action-creators/moviesActions';
+import { getAwards } from '../action-creators/actorsActions';
 
 const initData:MoviesState = {
     currentCountry:'',
@@ -142,147 +145,183 @@ export default (state = initData,action:Action) =>{
             }
         case MoviesTypes.GetTechnical:
             return{
-                ...state
+                ...state,
+                getTechnical:action.getTechnical
             }
         case MoviesTypes.GetTopCrew:
             return{
-                ...state
+                ...state,
+                getTopCrew:action.getTopCrew
             }
         case MoviesTypes.GetRatings:
             return{
-                ...state
+                ...state,
+                getRatings:action.getRatings
             }
         case MoviesTypes.GetAwards:
             return{
-                ...state
+                ...state,
+                getAwards:action.getAwards
             }
         case MoviesTypes.GetMetaCritic:
             return{
-                ...state
+                ...state,
+                getMetaCritic:action.getMetaCritic
             }
         case MoviesTypes.GetUserReviews:
             return{
-                ...state
+                ...state,
+                getUserReviews:action.getUserReviews
             }
         case MoviesTypes.GetAwardsSummary:
             return{
-                ...state
+                ...state,
+                getAwardsSummary:action.getAwardsSummary
             }
         case MoviesTypes.GetHeroWithPromotedVideo:
             return{
-                ...state
+                ...state,
+                getHeroWithPromotedVideo:action.getHeroWithPromotedVideo
             }
         case MoviesTypes.GetComingSoonMovies:
             return{
-                ...state
+                ...state,
+                getComingSoonMovies:action.getComingSoonMovies
             }
         case MoviesTypes.GetBase:
             return{
-                ...state
+                ...state,
+                getBase:action.getBase
             }
         case MoviesTypes.GetSeasons:
             return{
-                ...state
+                ...state,
+                getSeasons:action.getSeasons
             }
         case MoviesTypes.GetVideoPlayback:
             return{
-                ...state
+                ...state,
+                getVideoPlayback:action.getVideoPlayback
             }
         case MoviesTypes.GetTopRatedMovies:
             return{
-                ...state
+                ...state,
+                getTopRatedMovies:action.getTopRatedMovies
             }
         case MoviesTypes.GetPopularMoviesByGenre:
             return{
-                ...state
+                ...state,
+                getPopularMoviesByGenre:action.getPopularMoviesByGenre
             }
         case MoviesTypes.GetBusiness:
             return{
-                ...state
+                ...state,
+                getBusiness:action.getBusiness
             }
         case MoviesTypes.GetReleaseExpectationBudle:
             return{
-                ...state
+                ...state,
+                getReleaseExpectationBudle:action.getReleaseExpectationBudle
             }
         case MoviesTypes.GetNews:
             return{
-                ...state
+                ...state,
+                getNews:action.getNews
             }
         case MoviesTypes.ListPopularGenres:
             return{
-                ...state
+                ...state,
+                listPopularGenres:action.listPopularGenres
             }
         case MoviesTypes.GetReviews:
             return{
-                ...state
+                ...state,
+                getReviews:action.getReviews
             }
         case MoviesTypes.GetMostPopularTvShows:
             return{
-                ...state
+                ...state,
+                getMostPopularTvShows:action.getMostPopularTvShows
             }
         case MoviesTypes.GetSynopses:
             return{
-                ...state
+                ...state,
+                getSynopses:action.getSynopses
             }
         case MoviesTypes.GetGenres:
             return{
-                ...state
+                ...state,
+                getGenres:action.getGenres
             }
         case MoviesTypes.GetCharNameList:
             return{
-                ...state
+                ...state,
+                getCharNameList:action.getCharNameList
             }
         case MoviesTypes.GetMoreLikeThis:
             return{
-                ...state
+                ...state,
+                getMoreLikeThis:action.getMoreLikeThis
             }
         case MoviesTypes.GetBestPictureWinners:
             return{
-                ...state
+                ...state,
+                getBestPictureWinners:action.getBestPictureWinners
             }
         case MoviesTypes.GetTopRatedTvShows:
             return{
-                ...state
+                ...state,
+                getTopRatedTvShows:action.getTopRatedTvShows
             }
         case MoviesTypes.GetImages:
             return{
-                ...state
+                ...state,
+                getImages:action.getImages
             }
         case MoviesTypes.GetAllImages:
             return{
-                ...state
+                ...state,
+                getAllImages:action.getAllImages
             }
         case MoviesTypes.GetFilmingLocations:
             return{
-                ...state
+                ...state,
+                getFilmingLocations:action.getFilmingLocations
             }
         case MoviesTypes.GetMetaData:
             return{
-                ...state
+                ...state,
+                getMetaData:action.getMetaData
             }
         case MoviesTypes.GetReleases:
             return{
-                ...state
+                ...state,
+                getReleases:action.getReleases
             }
         case MoviesTypes.GetTrivia:
             return{
-                ...state
+                ...state,
+                getTrivia:action.getTrivia
             }
         case MoviesTypes.GetQuotes:
             return{
-                ...state
+                ...state,
+                getQuotes:action.getQuotes
             }
         case MoviesTypes.GetGoofs:
             return{
-                ...state
+                ...state,
+                getGoofs:action.getGoofs
             }
         case MoviesTypes.GetCrazyCredits:
             return{
-                ...state
+                ...state,
+                getCrazyCredits:action.getCrazyCredits
             }
         case MoviesTypes.GetSoundTracks:
             return{
-                ...state
+                ...state,
+                getSoundTracks:action.getSoundTracks
             }
         default:
             return {
