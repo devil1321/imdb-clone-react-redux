@@ -60,6 +60,11 @@ const initData:MoviesState = {
 
 export default (state = initData,action:Action) =>{
     switch(action.type){
+        case MoviesTypes.SetCurrentTitleId:
+            return {
+                ...state,
+                currentTitleId:action.currentTitleId
+            }
         case MoviesTypes.AutoComplete: 
             return {
                 ...state,

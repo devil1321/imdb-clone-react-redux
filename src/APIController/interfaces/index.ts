@@ -54,6 +54,7 @@ export interface MoviesState {
     getSoundTracks:any[];
 }
 export interface ActorsState {
+    actorId:string;
     listBornToday:any[];
     listMostPopularCelebs:any[];
     getBio:any[];
@@ -66,4 +67,46 @@ export interface ActorsState {
     getAwardsSummary:any[];
     getIntrestingJobs:any[];
     getKnowFor:any[]
+}
+
+export interface AxiosMoviesOptions {
+    method:any;
+    url:string;
+    params?:{
+        q?:string;
+        tconst?:string;
+        viconst?:string;
+        currentCountry?:string;
+        today?:string;
+        homeCountry?:string;
+        purchaseCountry?:string;
+        genre?:string;
+        country?:string;
+        limit?:string;
+        region?:string;
+    }
+    headers:{
+        'x-rapidapi-host':string;
+        'x-rapidapi-key':string;
+    }
+}
+
+export interface AxiosActorOptions {
+    method:any;
+    url:string;
+    params?:{
+       nconst?:string;
+       tconst?:string;
+       month?:string;
+       day?:string;
+       homeCountry?:string;
+       currentCountry?:string;
+       purchaseCountry?:string;
+       category?:string;
+       region?:string;
+    }
+    headers:{
+        'x-rapidapi-host':string;
+        'x-rapidapi-key':string;
+    }
 }

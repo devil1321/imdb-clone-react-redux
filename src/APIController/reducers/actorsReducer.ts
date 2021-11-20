@@ -3,6 +3,7 @@ import { ActorsState } from '../interfaces'
 import { Action } from '../actions/actorActions'
 
 const initData:ActorsState = {
+    actorId:'',
     listBornToday:[],
     listMostPopularCelebs:[],
     getBio:[],
