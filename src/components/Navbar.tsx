@@ -10,6 +10,7 @@ import { BsPeopleFill, BsArrowRightSquareFill, BsCollectionPlayFill } from 'reac
 import { FaCity } from 'react-icons/fa'
 import { MdBookmarkAdd } from 'react-icons/md'
 import { GiAlliedStar,GiPlanetConquest } from 'react-icons/gi'
+
 const Navbar:React.FC = () => {
 
     const [category,setCategory] = useState<string>('All')
