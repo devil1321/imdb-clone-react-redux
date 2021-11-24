@@ -1,0 +1,23 @@
+.footer{
+    @include createFlex(column,center,center,null);
+    &__icons{
+        margin:40px 0px;    
+        svg{
+            width: 30px;
+            height:30px;
+            margin:0px 30px;
+        }
+    }
+    &__links{
+        margin-bottom: 40px;
+        width: 75%;
+        @include createFlex(row,center,center,wrap);
+        a{
+            margin:10px 10px;
+            width: calc(100% / 7);
+            &:first-of-type{
+                min-width: 150px;
+            }
+        }
+    }
+}

@@ -18,6 +18,7 @@
         border-radius: 5px;
     }
     &__menu{
+        cursor: pointer;
         padding:5px;
         margin:0px 20px;
         margin-right: 20px;
@@ -146,6 +147,9 @@
         a{
             display: block;
             margin:20px 0px;
+            &:hover{
+                text-decoration: underline;
+            }
         }
         .--menu-item-wrapper{
             width: 33%;
@@ -179,6 +183,7 @@
         }
     }
     &__close-btn{
+        cursor: pointer;
         background-color: yellow;
         border-radius: 100%;
         width: 60px;
