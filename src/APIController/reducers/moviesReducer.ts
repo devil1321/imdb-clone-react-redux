@@ -7,7 +7,7 @@ import { getAwards } from '../action-creators/actorsActions';
 
 const initData:MoviesState = {
     currentCountry:'',
-    currentTitleId: '',
+    currentTitleId: 'tt0944947',
     autocomplete:[],
     find:[],
     getVideos:[],
@@ -17,7 +17,7 @@ const initData:MoviesState = {
     getTopCast:[],
     getFullCredits:[],
     getVersions:[],
-    getMostPopulatMovies:[],
+    getMostPopularMovies:[],
     getOverviewDetails:[],
     getTagLines:[],
     getPlots:[],
@@ -73,10 +73,11 @@ export default (state = initData,action:Action) =>{
                 ...state,
                 autocomplete:action.autocomplete
             }
+     
         case MoviesTypes.FindByTitle:
             return{
                 ...state,
-                findByTitle:action.findByTitle
+                find:action.findByTitle
             }
         case MoviesTypes.GetVideos:
             return{

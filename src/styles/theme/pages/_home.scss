@@ -1,0 +1,131 @@
+.home{
+    &__hero{
+        @include createFlex(row,space-between,flex-start,null);
+        &-v-carousel-wrapper{
+            position: relative;
+            top:0px;
+            left:0px;
+            margin-top: 20px;
+            width: 70%;
+            overflow: hidden;
+        
+        }
+        &-v-carousel-controls{
+            div{
+                padding:10px;
+                border:1px solid white;
+                background-color: rgba(0,0,0,0.55);
+                width: 30px;
+                height:50px;
+                border-radius: 3px;
+                @include createFlex(row,center,center,null)
+            }
+        }
+        &-v-carousel-prev{
+            position: absolute;
+            left:0px;
+            top:50%;
+            z-index: 3;
+            transform:translateY(-50%);
+        }
+        &-v-carousel-next{
+            position: absolute;
+            right:0px;
+            top:50%;
+            z-index: 3;
+            transform:translateY(-50%);
+        }
+        &-v-carousel-image-wrapper{
+            height:85vh;
+            overflow: hidden;
+            box-shadow: 0px -100px 100px inset black;
+            img{
+                position: relative;
+                top:0px;
+                left:0px;
+                z-index: -1;
+                width: 100%;
+            }
+        }
+        &-v-carousel{
+            @include createFlex(row,flex-start,center,null);
+        }
+        &-v-carousel-item{
+            min-width:100%;
+            position: relative;
+            top:0px;
+            left:0px;
+            margin-bottom:60px;
+            h3,h2{
+                margin:10px 0px;
+            }
+            svg{
+                margin:0px 20px;
+                width: 100px;
+                height:100px;
+            }
+        }
+        &-v-carousel-img-sm{
+            position:absolute;
+            bottom:10px;
+            left:-170px;
+            width: 180px;
+            height:250px;
+            overflow: hidden;
+            svg{
+                position: absolute;
+                top:-20px;
+                left:-20px;
+                z-index: 3;
+                width: 50px;
+                fill:black;
+                opacity:0.8;
+            }
+            img{
+                position: relative;
+                left:50%;
+                top:0px;
+                width: 150%;
+                transform:translateX(-50%);
+            }
+        }
+        &-v-carousel-text{
+            position:absolute;
+            bottom:10px;
+            left:200px;
+            @include createFlex(row,flex-start,center,null);
+        }
+        &-h-carousel-wrapper{
+            overflow: hidden;
+            height:85vh;
+            width: 30%;
+            margin-top: 20px;
+            margin-left: 20px;
+            img{
+                width: 30%;
+            }
+        }
+        &-h-carousel-item{
+            min-height:150px;
+            margin-bottom:20px;
+            @include createFlex(row,flex-start,center,null);
+            h2{
+                margin:5px 0px;
+                font-size: 16px;
+                font-weight: 500;
+            }
+            h3{
+                margin:5px 0px;
+                font-size: 14px;
+                font-weight: 400;
+            }
+            svg{
+                width: 30px;
+                height:30px;
+            }
+        }
+        &-h-carousel-text{
+            margin-left: 10px;
+        }
+    }
+}

@@ -10,7 +10,7 @@ export interface MoviesState {
     getTopCast:any[];
     getFullCredits:any[];
     getVersions:any[];
-    getMostPopulatMovies:any[];
+    getMostPopularMovies:any[];
     getOverviewDetails:any[];
     getTagLines:any[];
     getPlots:any[];

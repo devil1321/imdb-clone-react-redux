@@ -34,7 +34,9 @@ export const autocomplete = (query:string) => async(dispatch:Dispatch<Action>) =
       });
 }
 
-export const FindByTitle = (query:string) => async(dispatch:Dispatch<Action>) => {
+
+
+export const findByTitle = (query:string) => async(dispatch:Dispatch<Action>) => {
     var options:AxiosMoviesOptions = {
         method: 'GET',
         url: 'https://imdb8.p.rapidapi.com/title/find',
